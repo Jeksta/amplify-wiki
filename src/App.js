@@ -1,24 +1,14 @@
-import logo from './logo.svg';
+import "@aws-amplify/ui-react/styles.css";
 import './App.css';
+import { Auth } from "./app/pages/Auth.tsx";
+import { Authenticator, useAuthenticator } from "@aws-amplify/ui-react";
 
-function App() {
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Sanity Check
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Authenticator.Provider>
+      <Auth />
+    </Authenticator.Provider>
   );
 }
 
