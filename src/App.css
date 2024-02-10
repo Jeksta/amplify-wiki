@@ -1,3 +1,7 @@
+body {
+  background: url("images/voronoi.svg") 
+}
+
 .App {
   text-align: center;
 }

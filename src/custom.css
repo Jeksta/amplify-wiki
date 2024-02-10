@@ -1,0 +1,21 @@
+
+
+.auth-signIn-header{
+    display: flex;
+    justify-content: start;
+    padding: 1em 0 0 2em ;
+}
+
+.auth-signIn-footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1em;
+}
+
+.auth-signIn-remember-password{
+}
+
+
+.auth-signIn-remember-password:focus{
+    box-shadow: none;
+}
